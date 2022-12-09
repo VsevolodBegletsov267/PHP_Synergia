@@ -1,0 +1,21 @@
+body
+{
+	background-color: black;
+}
+h2
+{
+	font-size: 50px;
+	color: red;
+}
+h1
+{
+	font-size: 100px;
+	color: red;
+}
+
+h1.end
+{
+	font-size: 150px;
+	color: red;
+	font-family: 'Arial Black'
+}
