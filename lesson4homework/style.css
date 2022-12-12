@@ -1,0 +1,114 @@
+#frame
+{
+	width: 1000px;
+	background-color: darkred;
+	margin: auto;
+	display: table; /*Представление в форме таблицы*/
+	height: 100%;
+}
+#header
+{
+	width: 940px;
+	height: auto;
+	background-color: indianred;
+	margin: 50px;
+	padding: 20px; /*Внутренняя граница*/
+	text-align: center;
+	font-family: Comic Sans MS;
+	font-size: 50px;
+
+}
+#footer
+{
+	width: 940px;
+	height: 50px;
+	background-color: indianred;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px; /*Внутренняя граница*/
+	text-align: center;
+	font-family: Comic Sans MS;
+	display: table-footer-group; /*Представляем как футер*/
+}
+
+#content
+{
+	height: 900px;
+	width: 704px;
+	background-color: firebrick;
+	float: left;
+	text-align: left;
+	font-family: fantasy;
+	font-size: 40px;
+}
+
+#sidebar
+{
+	background-color: indianred;
+	width: 300px;
+	height: 100px;
+	margin: 30px;
+	float: right;
+	margin-top: 1px;
+	font-family: fantasy;
+	font-size: 20px;
+	text-align: center;
+}
+#MFrame1
+{
+	background-color: orangered;
+	height: 446px;
+	width: 350px;
+	border-color: darkred;
+	border-width: 1px;
+	border-style: solid;
+	float: left;
+	text-align: center;
+}
+
+#MFrame2
+{
+	background-color: orangered;
+	height: 446px;
+	width: 350px;
+	border-color: darkred;
+	border-width: 1px;
+	border-style: solid;
+    float: right;
+    text-align: center;
+}
+
+#ChB
+{
+	width: 240px;
+	height: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	display: block;
+}
+
+#MFrame3
+{
+	background-color: orangered;
+	height: 446px;
+	width: 350px;
+	border-color: darkred;
+	border-width: 1px;
+	border-style: solid;
+    float: right;
+    text-align: center;
+}
+
+#MFrame4
+{
+	background-color: orangered;
+	height: 446px;
+	width: 350px;
+	border-color: darkred;
+	border-width: 1px;
+	border-style: solid;
+    float: right;
+    text-align: center;
+}
+
