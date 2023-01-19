@@ -49,32 +49,36 @@ function func($inp){
 	    ];
 $four=$one+$two;
 if ($three==0){
-	if ($four>10) {
-		if ($four<20){
-			$value2=strtr($four, $converter4);
-			echo $value2;
-		}
-	}
-	elseif ($one>0){
-		$value1=strtr($one, $converter1);
-		$value2=strtr($two, $converter2);
-		echo $value2.'&nbsp'.$value1;
-	}
-}
-elseif($three==0){
-    if($two==0){
-		$value1=strtr($one, $converter1);
-		echo $value1;
-	}
-	elseif ($one==0) {
-		$value2=strtr($two, $converter2);
-		echo $value2;
-	}
-}
-elseif ($two==0) {
+	    if ($four>20){
+		    if ($one==0) {
+		        $value2=strtr($two, $converter2);
+		        echo $value2;
+		    }
+		    else{
+			    $value2=strtr($two, $converter2);
+			    $value1=strtr($one, $converter1);
+			    echo $value2.'&nbsp'.$value1;
+		    }
+	    }
+	    else{
+	    	if ($four<10){
+	    		$value1=strtr($one, $converter1);
+	    		echo $value1;
+	    	}
+	    	else{
+		    $value4=strtr($four, $converter4);
+		    echo $value4;
+	        }
+        }
+    }
+elseif ($two==0){
 	if ($one==0) {
 		$value3=strtr($three, $converter3);
 		echo $value3;
+	}
+	elseif ($three==0) {
+		$value1=strtr($one, $converter1);
+		echo $value1;
 	}
 	else{
 		$value3=strtr($three, $converter3);
@@ -82,8 +86,8 @@ elseif ($two==0) {
 		echo $value3.'&nbsp'.$value1;
 	}
 }
-elseif ($one==0) {
-	if ($two==0) {
+elseif ($one==0){
+	if ($two==0){
 		$value3=strtr($three, $converter3);
 		echo $value3;
 	}
@@ -98,20 +102,18 @@ elseif ($one==0) {
 	}
 }
 else{
-	if ($four>10) {
-		if ($four<20) {
+	if ($four>20){
+		$value1=strtr($one, $converter1);
+		$value2=strtr($two, $converter2);
 		$value3=strtr($three, $converter3);
-		$value2=strtr($four, $converter4);
-		echo $value3.'&nbsp'.$value2;
-		}
-        else{
-	    $value1=strtr($one, $converter1);
-	    $value2=strtr($two, $converter2);
-	    $value3=strtr($three, $converter3);
-	    echo $value3.'&nbsp'.$value2.'&nbsp'.$value1;
+		echo $value3.'&nbsp'.$value2.'&nbsp'.$value1;
+	}
+	else{
+		$value3=strtr($three, $converter3);
+		$value4=strtr($four, $converter4);
+		echo $value3.'&nbsp'.$value4;
+	}
 }
 }
-}
-}
-func(26);
+func(1);
 ?>
