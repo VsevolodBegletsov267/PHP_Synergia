@@ -21,17 +21,5 @@ function translit($value){
 	$value = strtr($value, $converter);
 	return $value;
 }
-/*
-if ($value1==0) {
-	echo $value3.'&nbsp'.$value2;
-}
-elseif ($value2==0) {
-	echo $value3.'&nbsp'.$value1;
-}
-elseif ($value3==0) {
-	echo $value2.'&nbsp'.$value1;
-} 
-*/
- 
 echo translit('КоДь написанъ');
 ?>
