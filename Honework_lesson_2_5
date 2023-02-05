@@ -1,0 +1,9 @@
+<?php
+ function func($a){
+ $pattern = '#\w|\s|\S|\iu#';
+ $subject = $a;
+ $res = preg_match_all($pattern, $subject);
+ echo $res;
+ } 
+ func('I_Love_PHP');
+ ?>
