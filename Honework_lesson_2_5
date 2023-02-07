@@ -5,5 +5,5 @@
  $res = preg_match_all($pattern, $subject);
  echo $res;
  } 
- func('I_Love_PHP');
+ func('Aaerhgcvb/]*');
  ?>
